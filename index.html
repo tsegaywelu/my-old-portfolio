@@ -41,7 +41,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="myimage/myimg2.jpg" alt="" />
+                    <img src="myimage/send.jpg" alt="" />
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">about me</h1>
@@ -336,6 +336,26 @@
             <p>copyright @ Tsegay Welu.<i class="fa-sharp fa-solid fa-heart"></i> made on 2022</p>
         </div>
     </div>
+    <script>
+        setTimeout(function() {
+            document.getElementById("header").style.backgroundImage = "url('./myimage/withmob.jpg')";
+            
+            setTimeout(function() {
+                document.getElementById("header").style.backgroundImage = "url('./myimage/third.jpg')";
+                
+                setTimeout(function() {
+                    document.getElementById("header").style.backgroundImage = "url('./myimage/4th.jpg')";
+                    
+                    setTimeout(function() {
+                        document.getElementById("header").style.backgroundImage = "url('./myimage/background.jpg')";
+                    }, 2000); // Change back to background after 2 seconds
+                    
+                }, 2000); // Change to 4th.jpg after 2 seconds
+                
+            }, 2000); // Change to third.jpg after 2 seconds
+            
+        }, 2000); // Change to withmob.jpg after 2 seconds
+    </script>
 
     <script src="tsegaywelu.js"></script>
     <script>
